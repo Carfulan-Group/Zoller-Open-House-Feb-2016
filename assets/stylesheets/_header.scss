@@ -1,0 +1,50 @@
+header {
+	.logo {
+		position: absolute;
+		top:40px;
+		left:0;
+		z-index: 99;
+	}
+}
+
+.page-title {
+	@extend .row;
+	h1,h2 {
+		font-size: 1.8em;
+		text-align: center;
+		margin:0;
+		padding:20px 15px;
+	}
+	h2 {
+		background: $yellow;
+	}
+}
+
+.social-links {
+	position: fixed;
+	top:400px;
+	right:0;
+	// transform:translatex(100%);
+	background: #fff;
+	z-index: 999;
+	a {
+		@extend .tran;
+		display: block;
+		padding: 20px;
+		color:#000;
+			&:hover {
+				background: #000;
+				color: $yellow;
+			}
+	}
+	@media screen and (max-width: 860px){
+		bottom:0;
+		top:auto;
+		left:0;
+		width:100%;
+		text-align: center;
+			a {
+				display: inline-block;
+			}
+	}
+}
